@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.card-body {
+  display: grid;
+  grid-template-areas:
+    "point point point point"
+    "image title ranking ranking"
+    "image title ranking ranking"
+    "image numbers ranking ranking";
+  gap: 5px;
+  background: linear-gradient(to right, #80c1f2 0%, #7c9ef2 100%);
+  padding: 0px 30px;
+  margin: 30px 0px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-body__point {
+  grid-area: point;
+}
+
+.card-body__image {
+  grid-area: image;
+}
+
+.card-body__title {
+  grid-area: title;
+}
+
+.card-body__numbers {
+  grid-area: numbers;
+}
+
+.card-body__ranking {
+  grid-area: ranking;
+}
+
+.card-body__point {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  color: #fff;
+  z-index: 3;
+}
+
+.card-body__point p {
+  margin: 0px;
+  font-size: 2.5rem;
+}
+
+.card-body__image {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 10px 0px 0px;
+  z-index: 2;
+}
+
+.card-body__image img {
+  width: 100%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-body__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  padding-top: 5px;
+  z-index: 2;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.title,
+.subtitle {
+  margin: 0px;
+  color: #fff;
+}
+
+.card-body__numbers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 15px;
+  z-index: 2;
+}
+
+.body-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 30px 0px 0px;
+}
+
+.body-number p {
+  margin: 0px;
+  line-height: 1.5;
+}
+
+.body-number__number,
+.body-number__category {
+  color: #fff;
+  text-align: center;
+}
+
+.card-body-ranking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+.card-body-ranking h2 {
+  font-size: 1.5rem;
+}
+
+.card-body-ranking h2,
+.card-body-ranking p {
+  margin: 0px;
+  color: #fff;
+}
+
+.card-body-ranking p {
+  padding: 10px 0px;
+}
+
+.circulo {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(to right, #80c1f2 0%, #7c9ef2 60%);
+  border-radius: 50%;
+  right: -110px;
+  bottom: -40px;
+  z-index: 1;
+}
