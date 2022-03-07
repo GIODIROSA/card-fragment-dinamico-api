@@ -164,4 +164,23 @@ body {
   right: -110px;
   bottom: -40px;
   z-index: 1;
+  opacity: 0.8;
+}
+
+/* CONDITION DE COLOR DE CARD */
+
+.nuevo {
+  background: linear-gradient(to right, #f51102 0%, #f59e91 100%);
+}
+
+.medio {
+  background: linear-gradient(to right, #cd8a39 0%, #595d2b 100%);
+}
+
+.avanzado {
+  background: linear-gradient(to right, #ffc98b 0%, #e99e75 100%);
+}
+
+.pro {
+  background: linear-gradient(to right, #e2e2e2 0%, #9f9bbc 100%);
 }
