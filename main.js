@@ -3,7 +3,7 @@ const userApi = async () => {
     const urlAPI = "https://randomuser.me/api/?results=20";
     const resAPI = await fetch(urlAPI);
     const data = await resAPI.json();
-    console.log(data.results);
+    //console.log(data.results);
     let datos = data.results;
     crearCard(datos);
 
